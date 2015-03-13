@@ -40,7 +40,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="brand" href="#">Plone Intranet Jenkins Status</a>
+          <a class="brand" href="http://jenkins.ploneintranet.net">Plone Intranet Jenkins Status</a>
         </div>
       </div>
     </div>
@@ -64,10 +64,15 @@
 	var job_root = "http://jenkins.ploneintranet.net/job/";
 	var packages = [
 	   ['Plone Intranet', 'ploneintranet.suite'],
-	   ['Plone Intranet workspace', 'ploneintranet.workspace'],
 	   ['Plone Intranet attachments', 'ploneintranet.attachments'],
+	   ['Plone Intranet Docconv Client', 'ploneintranet.docconv.client'],
 	   ['Plone Intranet invitations', 'ploneintranet.invitations'],
-	   ['Plone Intranet notifications', 'ploneintranet.notifications']
+	   ['Plone Intranet notifications', 'ploneintranet.notifications'],
+	   ['Plone Intranet pagerank', 'ploneintranet.pagerank'],
+	   ['Plone Intranet simplesharing', 'ploneintranet.simplesharing'],
+	   ['Plone Intranet theme', 'ploneintranet.theme'],
+	   ['Plone Intranet todo', 'ploneintranet.todo'],
+	   ['Plone Intranet workspace', 'ploneintranet.workspace']
 	];
 	$(packages).each(function(n, package) {
 	  var label = $('<td>' + package[1] + '</td>');
